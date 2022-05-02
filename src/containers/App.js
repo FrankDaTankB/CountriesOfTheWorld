@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-        fetch('https://restcountries.eu/rest/v2/all')
+        fetch('https://restcountries.com/v3.1/all')
         .then(res => res.json())
         .then((data) => {
           this.setState({ countries: data })
@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     const { countries, searchfield } = this.state;
     const filteredCountries = countries.filter(country =>{
-      return country.name.toLowerCase().includes(searchfield.toLowerCase());
+      return country.name.common.toLocaleLowerCase().includes(searchfield.toLocaleLowerCase());
     })
     return !countries.length ?
     <h1>Loading</h1> :

@@ -7,13 +7,13 @@ const CardList = ({ countries }) => {
   return(
     <div>
       {
-        countries.map((name, i) => {
+        countries.map((item, i) => {
           return (
             <Card
               key={i}
-              name={countries[i].name}
+              name={countries[i].name.common}
               region={countries[i].subregion}
-              flag={countries[i].flag}
+              flag={countries[i].flags.svg}
               population={countries[i].population}
             />
         );
