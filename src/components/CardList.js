@@ -3,7 +3,7 @@ import Card from './Card';
 
 
 
-const CardList = ({ countries }) => {
+const CardList = ({ countries, setModal }) => {
   return(
     <div>
       {
@@ -11,13 +11,14 @@ const CardList = ({ countries }) => {
           return (
             <Card
               key={i}
-              name={countries[i].name.common}
+              name={countries[i].name}
               region={countries[i].subregion}
               flag={countries[i].flags.svg}
               population={countries[i].population}
+              setModal={setModal}
             />
         );
-      })
+    })
       }
     </div>
   );
