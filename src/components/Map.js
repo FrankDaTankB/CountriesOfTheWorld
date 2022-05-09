@@ -9,10 +9,6 @@ export default class Map extends React.Component {
         this.ref = React.createRef();
         // reference to the map
         this.map = null;
-        this.state = {
-            clng: this.props.clng,
-            clat: this.props.clat
-        }
     }
 
     handleMapViewChange = (ev) => {
@@ -41,11 +37,11 @@ export default class Map extends React.Component {
                 layers.vector.normal.map,
                 {
                     pixelRatio: window.devicePixelRatio,
-                    center: { lat: this.state.clat, lng: this.state.clng },
+                    center: { lat: this.props.clat, lng: this.props.clng },
                     zoom: 5,
                 },
             );
-            let countryMarker = new H.map.Marker({ lat: this.state.clat, lng: this.state.clng });
+            let countryMarker = new H.map.Marker({ lat: this.props.clat, lng: this.props.clng });
             map.addObject(countryMarker)
             // MapEvents enables the event system
             // Behavior implements default interactions for pan/zoom (also on mobile touch environments)

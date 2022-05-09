@@ -32,7 +32,6 @@ class App extends Component {
         this.setState({ 
           countries: data,
           countryNumber: data.length,
-          country: data[13]
          })
       })
       .catch(console.log)
