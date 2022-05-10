@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/CountriesOfTheWorld/static/css/main.72a27a84.css",
-    "main.js": "/CountriesOfTheWorld/static/js/main.207d0245.js",
+    "main.css": "/CountriesOfTheWorld/static/css/main.9ca93a4f.css",
+    "main.js": "/CountriesOfTheWorld/static/js/main.eb0adc4f.js",
     "static/media/earth.jpg": "/CountriesOfTheWorld/static/media/earth.ae83871b3a5e677b7523.jpg",
     "index.html": "/CountriesOfTheWorld/index.html",
-    "main.72a27a84.css.map": "/CountriesOfTheWorld/static/css/main.72a27a84.css.map",
-    "main.207d0245.js.map": "/CountriesOfTheWorld/static/js/main.207d0245.js.map"
+    "main.9ca93a4f.css.map": "/CountriesOfTheWorld/static/css/main.9ca93a4f.css.map",
+    "main.eb0adc4f.js.map": "/CountriesOfTheWorld/static/js/main.eb0adc4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.72a27a84.css",
-    "static/js/main.207d0245.js"
+    "static/css/main.9ca93a4f.css",
+    "static/js/main.eb0adc4f.js"
   ]
 }
