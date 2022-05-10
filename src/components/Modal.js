@@ -38,7 +38,7 @@ const Modal = ({ handleClose, show, country, summary, lat, lng, zoom, onMapViewC
         }
         <ul> Languages
           {country.languages.map((item, i) => {
-            return <li>Name: {country.languages[i].name} Native Name: {country.languages[i].nativeName}</li>
+            return <li key={i}>Name: {country.languages[i].name} Native Name: {country.languages[i].nativeName}</li>
           })
           }
         </ul>

@@ -34,11 +34,22 @@
   height: 300px;
 }
 
+ul {
+  list-style-position: outside;
+}
+
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
 
 
 @media only screen and (max-width: 1000px) {
   .modal-main {
     width: calc(100% - 50px);
+    height: calc(100% - 20px);
   }
 
   .map {
